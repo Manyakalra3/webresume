@@ -1,0 +1,372 @@
+/* Global CSS */
+body {
+  
+    font-family: 'Roboto', sans-serif;
+
+   
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Helper Classes */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+.row1{
+    display: flex;
+}
+
+/* header */
+#header .logo{
+    flex: 1;
+    margin-top: 9px;
+    
+}
+/* #header #navbar{
+    flex: 1;
+} */
+#header #navbar ul li{
+    padding: 4px;
+    margin-top: 13px;
+}
+#header #navbar ul li a{
+    /* margin: 3px; */
+    padding: 17px;
+    color: white;
+    
+}
+#header #navbar ul li:nth-child(1) a{
+    color: blue;
+    
+}
+
+
+#header{
+    position: fixed;
+    top:0;
+    width:100%;
+    /* max-width: 1100px;
+   padding-top: 2%;
+   padding-left: auto; */
+
+    
+
+    z-index:10000;
+    background-color: rgba(1,1,1,0.4);
+}
+#header .logo i{
+   
+    color: #fff;
+    padding: 10px;
+    background-color: #127CF0;
+    border-radius: 25px;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+
+#header h1{
+    color: #fff;
+  
+  
+    font-weight: 600;
+    letter-spacing: 1px;
+    /* letter-spacing: 3px; */
+}
+/* banner */
+#sec-1{
+    /* height:100%; */
+    width: 100%;
+    
+    /* padding-top: 40px; */
+  background-image: url(../stylesheets/images/WhatsApp\ Image\ 2021-03-29\ at\ 11.23.12\ PM.jpeg);
+    /* background-image: url(../stylesheets/images/WhatsApp\ Image\ 2021-03-29\ at\ 11.23.12\ PM.jpeg); */
+    /* background-image: url("https://demo.w3layouts.com/demos_new/template_demo/30-10-2018/recognize_demo_Free/1686477365/web/images/banner.jpg");  */
+     background-size: 90% 100%;
+    background-repeat: no-repeat;
+    
+    /* text-align: center; */
+    /* background-size: 100% 100%; */
+    background-position: center;
+   background-color: rgb(1,1,1,0.7);
+
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+#sec-1 .banner{   
+    width:100%;
+    height:100%;
+    top:0 ;
+    left: 0;
+    position:absolute;
+    z-index: 100;
+   
+}
+#sec-1 .smallimg{
+background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");
+animation: 10s  snowanim linear infinite;
+}
+#sec-1 .mediumimg{
+background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");
+animation: 12s  snowanim linear infinite;
+}
+#sec-1 .largeimg{
+background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+animation: 14s  snowanim linear infinite;
+}
+.small-2,.medium-2,.large-2{
+    transform: translateY(-100%);
+    animation-delay: 5s !important;
+}
+
+@keyframes snowanim{
+    0%{
+        transform: translate(0,-100%);
+    }
+    100%{
+        transform: translate(3%,100%);
+    }
+}
+#overlay{
+background-color: rgba(1,1,1,0.6);
+z-index: 1000;
+height: inherit;
+}
+#sec-1 .sec1-text{
+   position :absolute;
+    top: 56%;
+    left: 5%;
+    color: white;
+}
+.sec1-text h6{
+font-weight: 850;
+color: #FFD900;
+}
+.sec1-text h1{
+    font-weight: 700;
+    font-size: 60px;
+    color:rgb(1,1,1,0.4);
+
+}
+.sec1-text  h1::before{
+    content: "I'M A PROGRAMMER";
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    font-size: 60px;
+    max-width: 1000px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: text-anim 6s linear;
+}
+@keyframes text-anim {
+    0% {
+        max-width: 0;
+    }
+    100%{
+        max-width: 1000px;
+    }
+}
+.sec1-text h4{
+font-weight: 700;
+}
+.sec1-text button{
+    border-radius: 25px;
+    padding: 5px 20px;
+} 
+  .white{
+background-color: white;
+color:#127CF0;
+
+border-color: white;
+
+}
+  .blue,.white:hover{
+    color: white;
+    background-color: #127CF0;
+    border-color: #127CF0;
+}
+/* SEC2 */
+#sec-2{
+    margin-bottom: 5%;
+}
+.about{
+    text-align: center;
+    color: #127CF0;
+    /* margin-bottom: 5%; */
+}
+.heading{
+    font-weight: 650;
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+#sec-2 .progress{
+    margin-bottom: 15%;
+    margin-top: 5%;
+    animation: animate 2s linear;
+    opacity: 1;
+    height: 10px;
+}
+@keyframes animation {
+    0%{
+     transform: translateY(100px);
+     opacity: 1;
+    }
+
+}
+#sec-2 .info h6{
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    font-size: 15px;
+}
+/* section3 */
+.sec-3{
+    background-size: 100% 100%;
+    width: 100%;
+    background-image: url("https://demo.w3layouts.com/demos_new/template_demo/29-10-2018/recognize_demo_Free/1043621068/web/images/serve.jpg");
+}
+.sec-3 .aboutme{
+    padding-top: 7.5%;
+}
+.sec-3 .aboutme .heading{
+    color: white;
+}
+.sec-3 button{
+    border-radius: 25px;
+    padding: 5px 20px;
+    
+} 
+.sec-3 .btnctrl{
+    text-align: center;
+}
+.sec-3 .text{
+    /* margin-top: 7%; */
+    background-color: rgba(243, 244, 245, 0.17);
+    text-align: center;
+
+    /* background-color: rgba(0,0, 0,0.3); */
+    
+}
+.sec-3 .text p{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.sec-3 .rowmar{
+    padding: 5%;
+    margin-bottom: 50px;
+}
+.sec-3 .text i{
+    color: #FFD900;
+    font-size: 30px;
+    margin-bottom: 10%;
+}
+.sec-3 .text:hover{
+    background-color:  #127CF0;
+}
+.sec-3 .text h4{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    /* font-size: 20px; */
+}
+/* section 5 */
+.sec-5{
+    margin-bottom: 70px;
+}
+.sec-5 .image{
+    position: relative;
+    cursor: pointer;
+}
+.sec-5 .row2{
+    margin-bottom: 3%;
+}
+.sec-5 .image a .rec{
+    position: absolute;
+    
+    color: white;
+    padding: 10px 107px;
+    background-color:black;
+    top: 75%;
+    left: 8%;
+    transform: rotateY(-180deg);
+     opacity: 0; 
+    transition: 1s;
+}
+.sec-5 .image:hover .rec{
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+/* section6 */
+.sec-6{
+    
+        width: 100%;
+        background-image: url("https://demo.w3layouts.com/demos_new/template_demo/30-10-2018/recognize_demo_Free/1686477365/web/images/contact.jpg");
+        background-size: 100% 100%;
+        padding: 60px 0px 70px 0px;
+    
+}
+.sec-6 .aboutme .heading{
+    color: white;
+}
+.sec-6 input[type="text"],.sec-6 textarea{
+    
+    background:none;
+    width:100%;
+    border:#727373 2px solid;
+    margin-bottom: 18px;
+    padding:21px 12px;
+}
+.sec-6 button{
+  /* margin: 30px auto 0px auto; */
+
+    margin-top: 28px;
+    border: none;
+
+}
+
+.sec-6 .addressinfo i{
+    color: #FFD900;
+    font-size: 35px;
+    padding: 20px 0px;
+}
+.sec-6 .addressinfo h5, .sec-6 .addressinfo h6{
+    color: #fff;
+   
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
